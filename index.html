@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teknoin Aja Store</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Teknoin Aja Store</h1>
+
+  <div id="product-list">
+    <h2>Daftar Produk</h2>
+    <ul>
+      <li>Produk 1 <button onclick="addToCart('Produk 1')">Tambahkan ke Keranjang</button></li>
+      <li>Produk 2 <button onclick="addToCart('Produk 2')">Tambahkan ke Keranjang</button></li>
+      <li>Produk 3 <button onclick="addToCart('Produk 3')">Tambahkan ke Keranjang</button></li>
+    </ul>
+  </div>
+
+  <div id="cart">
+    <h2>Keranjang</h2>
+    <ul id="cart-items"></ul>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+
+  <div id="checkout">
+    <h2>Checkout</h2>
+    <form>
+      <label for="name">Nama:</label>
+      <input type="text" id="name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required><br>
+
+      <label for="address">Alamat:</label>
+      <textarea id="address" required></textarea><br>
+
+      <button onclick="confirmOrder()">Konfirmasi Pesanan</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

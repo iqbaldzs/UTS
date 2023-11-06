@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+#product-list, #cart, #checkout {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+}
+
